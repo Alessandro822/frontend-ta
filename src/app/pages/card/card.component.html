@@ -1,0 +1,20 @@
+<h1 align="center" class="display-4 mb-5">{{title}}</h1>
+<div class="container p-4">
+  <div class="row">
+    <div *ngFor="let productInfo of page?.content" class="col-lg-3 col-md-8 mb-2">
+      <div class="box-container">
+        <a routerLink="/product/{{productInfo.productId}}">
+          <div class="box-content">
+            <img src="{{productInfo.productIcon}}" class="img-fluid" alt="{{productInfo.productName}}">
+            <p>{{productInfo.productName}}</p>
+            <p class="new-price">{{productInfo.productPrice | currency}}</p>
+            <p *ngIf="productInfo.productOldPrice" class="old-price">
+              <s>{{productInfo.productOldPrice | currency}}</s>
+            </p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+<app-pagination [currentPage]="page"></app-pagination>

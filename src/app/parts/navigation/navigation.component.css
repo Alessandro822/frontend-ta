@@ -1,0 +1,139 @@
+/* Importar la fuente Wittgenstein */
+@import url('https://fonts.googleapis.com/css2?family=Wittgenstein&display=swap');
+
+/* Header Styles */
+.header {
+    background: #fff;
+    border-bottom: 1px solid #000; /* Border bottom de 1px en negro */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 0.5rem 0;
+    font-family: 'Wittgenstein', sans-serif; /* Fuente más elegante */
+}
+
+.logo img {
+  width: 240px;
+  height: 70px;
+  margin: 2px 0;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo img {
+    width: 40px; /* Ajustar el tamaño del logo */
+    height: 40px;
+}
+
+.nav {
+    display: flex;
+}
+
+.nav-items {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-item {
+    position: relative;
+    margin-right: 1.5rem;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-family: 'Wittgenstein', sans-serif;
+    font-size: 1rem;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #6a1b9a;
+}
+
+.has-dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 0.5rem 0;
+    z-index: 1000;
+}
+
+.dropdown-item a {
+    display: block;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: #333;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.dropdown-item a:hover {
+    background: #f7f7f7;
+    color: #6a1b9a;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.search-bar input {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    width: 200px;
+    transition: width 0.3s ease;
+    font-family: 'Wittgenstein', sans-serif;
+}
+
+.search-bar input:focus {
+    width: 250px;
+    outline: none;
+    border-color: #6a1b9a;
+}
+
+.search-bar .search-icon {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+}
+
+.account-actions {
+    display: flex;
+    align-items: center;
+}
+
+.action-item {
+    margin-left: 1rem;
+}
+
+.account-link {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+    font-family: 'Wittgenstein', sans-serif;
+}
+
+.account-link img {
+    width: 25px; /* Ajustar el tamaño de los iconos */
+    height: 25px;
+    vertical-align: middle;
+}
+
+.account-link:hover {
+    color: #6a1b9a;
+}

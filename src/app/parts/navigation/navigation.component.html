@@ -1,0 +1,95 @@
+<header class="header">
+    <div class="container">
+      <div>
+        <a [routerLink]="root" class="logo">
+          <img src="assets/nav/logo.png" alt="Logo" width="30" height="30">
+        </a>
+      </div>
+      <nav class="nav">
+        <ul class="nav-items">
+          <li class="nav-item has-dropdown">
+            <a class="nav-link">SALAS<i class="fas fa-chevron-down"></i></a>
+            <ul class="dropdown-menu">
+              <li class="dropdown-item"><a routerLink="/category/0">Books</a></li>
+              <li class="dropdown-item"><a routerLink="/category/1">Food</a></li>
+              <li class="dropdown-item"><a routerLink="/category/2">Clothes</a></li>
+              <li class="dropdown-item"><a routerLink="/category/3">Drink</a></li>
+            </ul>
+          </li>
+          <li class="nav-item has-dropdown">
+            <a class="nav-link">COMEDORES<i class="fas fa-chevron-down"></i></a>
+            <ul class="dropdown-menu">
+              <li class="dropdown-item"><a href="#">Colecciones</a></li>
+              <li class="dropdown-item"><a routerLink="/category/1">Food</a></li>
+              <li class="dropdown-item"><a href="#">Comedores</a></li>
+              <li class="dropdown-item"><a href="#">Mesas</a></li>
+              <li class="dropdown-item"><a href="#">Sillas de comedor</a></li>
+              <li class="dropdown-item"><a href="#">Aparadores</a></li>
+              <li class="dropdown-item"><a href="#">Butacas</a></li>
+            </ul>
+          </li>
+          <li class="nav-item has-dropdown">
+            <a class="nav-link">DORMITORIO<i class="fas fa-chevron-down"></i></a>
+            <ul class="dropdown-menu">
+              <li class="dropdown-item"><a href="#">Colecciones</a></li>
+              <li class="dropdown-item"><a routerLink="/category/2">Clothes</a></li>
+              <li class="dropdown-item"><a href="#">Camas</a></li>
+              <li class="dropdown-item"><a href="#">Veladores</a></li>
+              <li class="dropdown-item"><a href="#">Cómodas</a></li>
+              <li class="dropdown-item"><a href="#">Sofá Cama</a></li>
+            </ul>
+          </li>
+          <li class="nav-item has-dropdown">
+            <a class="nav-link">OFICINA<i class="fas fa-chevron-down"></i></a>
+            <ul class="dropdown-menu">
+              <li class="dropdown-item"><a href="#">Escritorios</a></li>
+              <li class="dropdown-item"><a routerLink="/category/3">Drink</a></li>
+              <li class="dropdown-item"><a href="#">Bibliotecas</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <div class="search-bar">
+        <input type="text" placeholder="Buscar...">
+        <!-- <img src="assets/nav/lupa.png" alt="Buscar" class="search-icon"> -->
+      </div>
+      <div class="account-actions">
+        <div class="action-item">
+          <a *ngIf="!currentUser || currentUser.role == Role.Customer" routerLink="/cart" class="account-link">
+            <img src="assets/nav/carrito.png" alt="Carrito">
+          </a>
+        </div>
+        <ng-container *ngIf="currentUser; else noUser">
+          <div class="action-item">
+            <a routerLink="/order" class="account-link">
+              <img src="assets/nav/orden.png" alt="order">
+            </a>
+          </div>
+          <div class="action-item">
+            <a routerLink="/profile" class="account-link">
+              <img src="assets/nav/login.png">
+              <!-- {{name}} -->
+            </a>
+          </div>
+          <div class="action-item">
+            <a (click)="logout()" routerLink="/login" [queryParams]="{logout: true}" class="account-link">
+              <img src="assets/nav/salida.png" alt="salida">
+            </a>
+          </div>
+        </ng-container>
+        <ng-template #noUser>
+          <div class="action-item">
+            <a routerLink="/login" class="account-link" id="loginBtn">
+              <img src="assets/nav/login.png" alt="Login">
+            </a>
+          </div>
+          <div class="action-item">
+            <a routerLink="/register" class="account-link">
+              <img src="assets/nav/register.png" alt="register">
+            </a>
+          </div>
+        </ng-template>
+      </div>
+    </div>
+  </header>
+  

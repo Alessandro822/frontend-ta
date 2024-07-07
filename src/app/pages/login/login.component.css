@@ -1,0 +1,109 @@
+/* Importar la fuente Wittgenstein */
+@import url('https://fonts.googleapis.com/css2?family=Wittgenstein&display=swap');
+
+/* Container for Sign-in */
+.container-signin {
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(to right, #f3e7e9, #e3eeff); /* Fondo degradado más elegante */
+}
+
+/* Form Container */
+.signin-form-container {
+    width: 40%;
+    margin: 25px auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+    border: 1px solid #ddd; /* Borde más definido */
+    font-family: 'Wittgenstein', sans-serif; /* Fuente más elegante */
+}
+
+/* Alert */
+.alert {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    background-color: #f8d7da;
+    color: #721c24;
+    border-color: #f5c6cb;
+    font-family: 'Wittgenstein', sans-serif;
+}
+
+/* Form Group */
+.form-group {
+    margin-bottom: 1.5rem;
+    color: #555;
+    font-family: 'Wittgenstein', sans-serif;
+}
+
+/* Inline Elements */
+.inline {
+    display: inline;
+    color: #333;
+    font-family: 'Wittgenstein', sans-serif;
+}
+
+/* Float Right */
+.float-right {
+    float: right;
+    color: #00796b; /* Color verde azulado elegante */
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-family: 'Wittgenstein', sans-serif;
+}
+
+.float-right:hover {
+    color: #004d40; /* Color verde azulado más oscuro para el hover */
+}
+
+/* Primary Button */
+.btn-primary {
+    display: block;
+    width: 100%;
+    background-color: #00796b; /* Color verde azulado */
+    color: white;
+    padding: 0.75rem 1.25rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: 'Wittgenstein', sans-serif;
+}
+
+.btn-primary:hover {
+    background-color: #004d40; /* Color verde azulado más oscuro para el hover */
+    transform: translateY(-2px);
+}
+
+/* Keyframes for Fade In Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Checkbox Styling */
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+label[for="remember_me"] {
+    color: #333;
+    font-family: 'Wittgenstein', sans-serif;
+}

@@ -1,0 +1,70 @@
+/* Importar la fuente Wittgenstein */
+@import url('https://fonts.googleapis.com/css2?family=Wittgenstein&display=swap');
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    font-family: 'Wittgenstein', sans-serif;
+}
+
+.footer-title {
+    font-size: 1.25rem;
+    color: #ffeb3b; /* Amarillo dorado */
+    margin-bottom: 1rem;
+}
+
+.custom-link {
+    color: #fff;
+    margin: 0;
+}
+
+.custom-link:hover {
+    color: #ffeb3b; /* Color dorado en hover */
+}
+
+.footer-icon {
+    width: 20px;
+    height: 20px;
+    filter: invert(100%);
+}
+
+.text-body {
+    color: #bbb;
+    text-decoration: none;
+}
+
+.text-body:hover {
+    color: #ffeb3b; /* Color dorado en hover */
+}
+
+.icon-wrapper {
+    display: inline-block;
+}
+
+.footer-bottom {
+    background-color: #222;
+    color: #bbb;
+    padding: 1rem 0;
+    font-size: 0.875rem;
+}
+
+.redes .icon-wrapper img {
+    width: 25px;
+    height: 25px;
+    transition: transform 0.3s ease;
+}
+
+.redes .icon-wrapper:hover img {
+    transform: scale(1.1);
+}
+
+.footer-bottom a {
+    color: #ffeb3b;
+    text-decoration: none;
+    margin-left: 0.5rem;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}
